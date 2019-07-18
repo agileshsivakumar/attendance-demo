@@ -13,6 +13,7 @@
               <th scope="col">#</th>
               <th scope="col">NAME</th>
               <th scope="col">ATTENDANCE</th>
+              <th scope="col">IN TIME</th>
               <th scope="col">ASSIGNMENT</th>
             </tr>
           </thead>
@@ -20,18 +21,33 @@
             <tr *ngFor="let attendee of attendees; index as i">
               <th scope="row">{{ i + 1 }}</th>
               <td class="text-left">
-                {{ attendee }}
+                {{ attendee.name }}
               </td>
               <th>
                 <div>
                   <label class="form-check-label">
                     <input
                       type="checkbox"
-                      name="isIn"
-                      id="isIn"
-                      value="checkedValue"
+                      [(ngModel)]="attendee.isIn"
+                      (change)="attendanceChanged(attendee)"
                     />
                   </label>
+                </div>
+              </th>
+              <th>
+                <div>
+                  <span
+                    *ngIf="attendee.inTime"
+                    [ngClass]="{
+                      badge: attendee.inTime,
+                      'badge-success': attendee.status === 'good',
+                      'badge-info': attendee.status === 'not-on-time',
+                      'badge-warning': attendee.status === 'late',
+                      'badge-danger': attendee.status === 'no-entry'
+                    }"
+                  >
+                    {{ attendee.inTime }}
+                  </span>
                 </div>
               </th>
               <th>
