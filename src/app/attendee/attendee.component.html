@@ -1,0 +1,276 @@
+<div class="as-padding" *ngIf="day > 0">
+  <br />
+  <h1 class="text-center">
+    Angular Training&nbsp;<span class="badge badge-secondary"
+      >Day {{ day }}</span
+    >
+  </h1>
+  <br />
+
+  <div *ngIf="attendeeService.attendees" class="table-responsive">
+    <table class="table table-bordered text-center align-middle">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col" rowspan="2">#</th>
+          <th scope="col" rowspan="2">NAME</th>
+          <th scope="col" rowspan="1" colspan="3">DAY 1</th>
+          <th scope="col" rowspan="1" colspan="3">DAY 2</th>
+          <th scope="col" rowspan="1" colspan="3">DAY 3</th>
+          <th scope="col" rowspan="1" colspan="3">DAY 4</th>
+          <th scope="col" rowspan="1" colspan="3">DAY 5</th>
+        </tr>
+        <tr>
+          <th scope="col">IN</th>
+          <th scope="col">TIME</th>
+          <th scope="col">ASSIGNMENT</th>
+          <th scope="col">IN</th>
+          <th scope="col">TIME</th>
+          <th scope="col">ASSIGNMENT</th>
+          <th scope="col">IN</th>
+          <th scope="col">TIME</th>
+          <th scope="col">ASSIGNMENT</th>
+          <th scope="col">IN</th>
+          <th scope="col">TIME</th>
+          <th scope="col">ASSIGNMENT</th>
+          <th scope="col">IN</th>
+          <th scope="col">TIME</th>
+          <th scope="col">ASSIGNMENT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let attendee of attendeeService.attendees; index as i">
+          <th scope="row">{{ i + 1 }}</th>
+          <td class="text-left">
+            <span [ngClass]="{ 'text-danger': attendee.isStriken }">{{
+              attendee.name.split(' ')[0]
+            }}</span>
+          </td>
+
+          <!-- Day 1 details -->
+          <td>
+            <div>
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  [disabled]="dayNumber !== 0"
+                  [(ngModel)]="attendee.days[0].isIn"
+                  (change)="attendanceChanged(attendee.days[0])"
+                />
+              </label>
+            </div>
+          </td>
+          <td>
+            <div>
+              <span
+                *ngIf="attendee.days[0].isIn && attendee.days[0].inTime"
+                [ngClass]="{
+                  badge: attendee.days[0].inTime,
+                  'badge-success': getStatus(attendee.days[0]) === 'good',
+                  'badge-info': getStatus(attendee.days[0]) === 'not-on-time',
+                  'badge-warning': getStatus(attendee.days[0]) === 'late',
+                  'badge-danger': getStatus(attendee.days[0]) === 'no-entry'
+                }"
+              >
+                {{ attendee.days[0].inTime }}
+              </span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  [disabled]="dayNumber !== 1 || !attendee.days[0].isIn"
+                  [(ngModel)]="attendee.days[0].isAssignmentCompleted"
+                />
+              </label>
+            </div>
+          </td>
+
+          <!-- Day 2 details -->
+          <td>
+            <div>
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  [disabled]="
+                    dayNumber !== 1 ||
+                    (attendee.isStriken &&
+                      !attendee.days[0].isAssignmentCompleted)
+                  "
+                  [(ngModel)]="attendee.days[1].isIn"
+                  (change)="attendanceChanged(attendee.days[1])"
+                />
+              </label>
+            </div>
+          </td>
+          <td>
+            <div>
+              <span
+                *ngIf="attendee.days[1].isIn && attendee.days[1].inTime"
+                [ngClass]="{
+                  badge: attendee.days[1].inTime,
+                  'badge-success': getStatus(attendee.days[1]) === 'good',
+                  'badge-info': getStatus(attendee.days[1]) === 'not-on-time',
+                  'badge-warning': getStatus(attendee.days[1]) === 'late',
+                  'badge-danger': getStatus(attendee.days[1]) === 'no-entry'
+                }"
+              >
+                {{ attendee.days[1].inTime }}
+              </span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  [disabled]="dayNumber !== 2 || !attendee.days[1].isIn"
+                  [(ngModel)]="attendee.days[1].isAssignmentCompleted"
+                />
+              </label>
+            </div>
+          </td>
+
+          <!-- Day 3 details -->
+          <td>
+            <div>
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  [disabled]="
+                    dayNumber !== 2 ||
+                    (attendee.isStriken &&
+                      !attendee.days[1].isAssignmentCompleted)
+                  "
+                  [(ngModel)]="attendee.days[2].isIn"
+                  (change)="attendanceChanged(attendee.days[2])"
+                />
+              </label>
+            </div>
+          </td>
+          <td>
+            <div>
+              <span
+                *ngIf="attendee.days[2].isIn && attendee.days[2].inTime"
+                [ngClass]="{
+                  badge: attendee.days[2].inTime,
+                  'badge-success': getStatus(attendee.days[2]) === 'good',
+                  'badge-info': getStatus(attendee.days[2]) === 'not-on-time',
+                  'badge-warning': getStatus(attendee.days[2]) === 'late',
+                  'badge-danger': getStatus(attendee.days[2]) === 'no-entry'
+                }"
+              >
+                {{ attendee.days[2].inTime }}
+              </span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  [disabled]="dayNumber !== 3 || !attendee.days[2].isIn"
+                  [(ngModel)]="attendee.days[2].isAssignmentCompleted"
+                />
+              </label>
+            </div>
+          </td>
+
+          <!-- Day 4 details -->
+          <td>
+            <div>
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  [disabled]="
+                    dayNumber !== 3 ||
+                    (attendee.isStriken &&
+                      !attendee.days[2].isAssignmentCompleted)
+                  "
+                  [(ngModel)]="attendee.days[3].isIn"
+                  (change)="attendanceChanged(attendee.days[3])"
+                />
+              </label>
+            </div>
+          </td>
+          <td>
+            <div>
+              <span
+                *ngIf="attendee.days[3].isIn && attendee.days[3].inTime"
+                [ngClass]="{
+                  badge: attendee.days[3].inTime,
+                  'badge-success': getStatus(attendee.days[3]) === 'good',
+                  'badge-info': getStatus(attendee.days[3]) === 'not-on-time',
+                  'badge-warning': getStatus(attendee.days[3]) === 'late',
+                  'badge-danger': getStatus(attendee.days[3]) === 'no-entry'
+                }"
+              >
+                {{ attendee.days[3].inTime }}
+              </span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  [disabled]="dayNumber !== 4 || !attendee.days[3].isIn"
+                  [(ngModel)]="attendee.days[3].isAssignmentCompleted"
+                />
+              </label>
+            </div>
+          </td>
+
+          <!-- Day 5 details -->
+          <td>
+            <div>
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  [disabled]="
+                    dayNumber !== 4 ||
+                    (attendee.isStriken &&
+                      !attendee.days[3].isAssignmentCompleted)
+                  "
+                  [(ngModel)]="attendee.days[4].isIn"
+                  (change)="attendanceChanged(attendee.days[4])"
+                />
+              </label>
+            </div>
+          </td>
+          <td>
+            <div>
+              <span
+                *ngIf="attendee.days[4].isIn && attendee.days[4].inTime"
+                [ngClass]="{
+                  badge: attendee.days[4].inTime,
+                  'badge-success': getStatus(attendee.days[4]) === 'good',
+                  'badge-info': getStatus(attendee.days[4]) === 'not-on-time',
+                  'badge-warning': getStatus(attendee.days[4]) === 'late',
+                  'badge-danger': getStatus(attendee.days[4]) === 'no-entry'
+                }"
+              >
+                {{ attendee.days[4].inTime }}
+              </span>
+            </div>
+          </td>
+          <td>
+            <div>
+              <label class="form-check-label">
+                <input
+                  type="checkbox"
+                  [disabled]="!attendee.days[4].isIn"
+                  [(ngModel)]="attendee.days[4].isAssignmentCompleted"
+                />
+                <!-- Its not disabled coz it will not be updated -->
+              </label>
+            </div>
+          </td>
+
+          <!-- Day details over -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
