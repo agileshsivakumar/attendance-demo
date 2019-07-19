@@ -16,7 +16,7 @@ type status = 'good' | 'not-on-time' | 'late' | 'no-entry';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public attendees: Attendee[] = [
+  private Attendees: Attendee[] = [
     {
       name: 'Agilesh Sivakumar',
       isIn: false,
@@ -118,11 +118,6 @@ export class AppComponent {
       isAssignmentCompleted: false
     },
     {
-      name: 'Agilesh Sivakumar',
-      isIn: false,
-      isAssignmentCompleted: false
-    },
-    {
       name: 'Ooha Bhoga',
       isIn: false,
       isAssignmentCompleted: false
@@ -133,6 +128,18 @@ export class AppComponent {
       isAssignmentCompleted: false
     }
   ];
+
+  public attendees = this._attendees.sort((a: Attendee, b: Attendee) => {
+    const name1 = a.name.toLowerCase();
+    const name2 = b.name.toLowerCase();
+    if (name1 > name2) {
+      return 1;
+    }
+    if (name1 < name2) {
+      return -1;
+    }
+    return 0;
+  });
 
   public attendanceChanged(attendee: Attendee): void {
     if (!attendee.isIn) {
