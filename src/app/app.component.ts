@@ -129,7 +129,7 @@ export class AppComponent {
     }
   ];
 
-  public attendees = this._attendees.sort((a: Attendee, b: Attendee) => {
+  public attendees = this.Attendees.sort((a: Attendee, b: Attendee) => {
     const name1 = a.name.toLowerCase();
     const name2 = b.name.toLowerCase();
     if (name1 > name2) {
