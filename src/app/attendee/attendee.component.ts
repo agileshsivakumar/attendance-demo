@@ -1,4 +1,5 @@
-import { Component, Input, OnChanges, SimpleChange } from '@angular/core';
+import { Component, Input, OnChanges, ViewContainerRef } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Day, status } from './_model/attendee';
 import { AttendanceService } from './_services/attendance.service';
 
@@ -8,13 +9,17 @@ import { AttendanceService } from './_services/attendance.service';
   styleUrls: ['./attendee.component.scss']
 })
 export class AttendeeComponent implements OnChanges {
-  @Input() day: number;
+  @Input() sessionDay: number;
   public dayNumber: number;
-  constructor(public attendeeService: AttendanceService) {}
+
+  constructor(
+    public attendeeService: AttendanceService,
+    private ngbModalService: NgbModal
+  ) {}
 
   ngOnChanges() {
-    if (this.day) {
-      this.dayNumber = this.day - 1;
+    if (this.sessionDay) {
+      this.dayNumber = this.sessionDay - 1;
     }
   }
 
@@ -30,7 +35,7 @@ export class AttendeeComponent implements OnChanges {
     });
   }
 
-  getStatus(day: Day): status {
+  public getStatus(day: Day): status {
     const hours = parseInt(day.inTime.split(':')[0], 10);
     const minutes = parseInt(day.inTime.split(':')[1], 10);
     if (hours < 10 || (hours === 10 && minutes === 0)) {
@@ -42,5 +47,13 @@ export class AttendeeComponent implements OnChanges {
     } else {
       return 'no-entry';
     }
+  }
+
+  public consoleAttendees() {
+    console.log(JSON.stringify(this.attendeeService.attendees));
+  }
+
+  public openToppers(content: ViewContainerRef): void {
+    this.ngbModalService.open(content, { centered: true });
   }
 }

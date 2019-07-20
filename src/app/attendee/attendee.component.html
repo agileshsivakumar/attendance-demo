@@ -1,8 +1,10 @@
-<div class="as-padding" *ngIf="day > 0">
+<div class="as-margin" *ngIf="sessionDay > 0">
   <br />
   <h1 class="text-center">
-    Angular Training&nbsp;<span class="badge badge-secondary"
-      >Day {{ day }}</span
+    Angular Training&nbsp;<span
+      (click)="consoleAttendees()"
+      class="badge badge-secondary"
+      >Day {{ sessionDay }}</span
     >
   </h1>
   <br />
@@ -273,4 +275,35 @@
       </tbody>
     </table>
   </div>
+
+  <div class="col-xs-1 text-center">
+    <button class="btn btn-outline-success" (click)="openToppers(content)">
+      Top 3
+    </button>
+  </div>
 </div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title text-center">Top 3 Attendees</h4>
+  </div>
+  <div class="modal-body">
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let attendee of attendeeService.getTop3()"
+      >
+        {{ attendee.name }}
+      </li>
+    </ul>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-light"
+      (click)="modal.close('Close click')"
+    >
+      Close
+    </button>
+  </div>
+</ng-template>

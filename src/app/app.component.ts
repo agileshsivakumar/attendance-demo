@@ -7,13 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public days = [1, 2, 3, 4, 5];
-  public day = 0;
-
-  constructor() {
-    console.log(this.day);
-  }
+  public sessionDay = 0;
 
   setDay(value: string) {
-    this.day = parseInt(value, 10);
+    this.sessionDay = parseInt(value, 10);
   }
 }

@@ -1,4 +1,4 @@
-<div *ngIf="!(day > 0)" class="container-fluid">
+<div *ngIf="!(sessionDay > 0)" class="container">
   <div class="row">
     <div class="col">
       <form>
@@ -14,4 +14,4 @@
   </div>
 </div>
 
-<app-attendee [day]="day"></app-attendee>
+<app-attendee [sessionDay]="sessionDay"></app-attendee>
