@@ -46,6 +46,18 @@
             <span [ngClass]="{ 'text-danger': attendee.isStriken }">{{
               attendee.name.split(' ')[0]
             }}</span>
+            &nbsp;
+            <span
+              *ngIf="attendeeService.isShowMarks"
+              [ngClass]="{
+                badge: attendee.marks !== undefined,
+                'badge-success': attendee.marks/dayNumber > 6,
+                'badge-info': attendee.marks/dayNumber > 5 && attendee.marks/dayNumber <= 6,
+                'badge-warning': attendee.marks/dayNumber > 4 && attendee.marks/dayNumber <= 5,
+                'badge-danger': attendee.marks/dayNumber > 0 && attendee.marks/dayNumber <= 4
+              }"
+              >{{ attendee.marks }}</span
+            >
           </td>
 
           <!-- Day 1 details -->

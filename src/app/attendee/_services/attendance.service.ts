@@ -8,6 +8,7 @@ import { AttendeeComponent } from '../attendee.component';
 })
 export class AttendanceService {
   private _attendees: Attendee[] = [];
+  public isShowMarks = false;
 
   constructor(private http: HttpClient) {
     this.http.get('assets/attendees.json').subscribe(attendeesObject => {
@@ -32,6 +33,7 @@ export class AttendanceService {
       }
       return 0;
     });
+    this.isShowMarks = true;
     return top3Attendees.slice(0, 3);
   }
 

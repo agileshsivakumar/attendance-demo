@@ -1,5 +1,26 @@
 [
   {
+    "name": "Aaquib Nawaz",
+    "marks": 0,
+    "days": [
+      {
+        "dayNumber": 1,
+        "isIn": true,
+        "inTime": "10:00 AM",
+        "isAssignmentCompleted": true
+      },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "9:52 AM",
+        "isAssignmentCompleted": true
+      },
+      { "dayNumber": 3 },
+      { "dayNumber": 4 },
+      { "dayNumber": 5 }
+    ]
+  },
+  {
     "name": "Agilesh Sivakumar",
     "marks": 0,
     "days": [
@@ -12,7 +33,8 @@
       {
         "dayNumber": 2,
         "isIn": true,
-        "inTime": "10:00 AM"
+        "inTime": "9:52 AM",
+        "isAssignmentCompleted": true
       },
       { "dayNumber": 3 },
       { "dayNumber": 4 },
@@ -20,8 +42,8 @@
     ]
   },
   {
-    "name": "Aaquib Nawaz",
-    "marks": 0,
+    "name": "Anjana Patra",
+    "marks": 10,
     "days": [
       {
         "dayNumber": 1,
@@ -29,7 +51,54 @@
         "inTime": "10:00 AM",
         "isAssignmentCompleted": true
       },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "9:56 AM",
+        "isAssignmentCompleted": true
+      },
+      { "dayNumber": 3 },
+      { "dayNumber": 4 },
+      { "dayNumber": 5 }
+    ]
+  },
+  {
+    "name": "Ashish Mallegowda",
+    "marks": 14,
+    "days": [
+      {
+        "dayNumber": 1,
+        "isIn": true,
+        "inTime": "10:00 AM",
+        "isAssignmentCompleted": true
+      },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "9:52 AM",
+        "isAssignmentCompleted": true
+      },
+      { "dayNumber": 3 },
+      { "dayNumber": 4 },
+      { "dayNumber": 5 }
+    ]
+  },
+  {
+    "name": "Bhagyashri Dhoop",
+    "marks": 10,
+    "days": [
+      {
+        "dayNumber": 1,
+        "isIn": true,
+        "inTime": "10:00 AM",
+        "isAssignmentCompleted": true
+      },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "9:58 AM",
+        "isAssignmentCompleted": true
+      },
       { "dayNumber": 3 },
       { "dayNumber": 4 },
       { "dayNumber": 5 }
@@ -37,7 +106,7 @@
   },
   {
     "name": "Chandrasekaran T D",
-    "marks": 7,
+    "marks": 12,
     "days": [
       {
         "dayNumber": 1,
@@ -45,7 +114,76 @@
         "inTime": "10:00 AM",
         "isAssignmentCompleted": true
       },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:17 AM" },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "10:17 AM",
+        "isAssignmentCompleted": true
+      },
+      { "dayNumber": 3 },
+      { "dayNumber": 4 },
+      { "dayNumber": 5 }
+    ]
+  },
+  {
+    "name": "Dinesh Malviya",
+    "marks": 12,
+    "days": [
+      {
+        "dayNumber": 1,
+        "isIn": true,
+        "inTime": "10:00 AM",
+        "isAssignmentCompleted": true
+      },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "9:55 AM",
+        "isAssignmentCompleted": true
+      },
+      { "dayNumber": 3 },
+      { "dayNumber": 4 },
+      { "dayNumber": 5 }
+    ]
+  },
+  {
+    "name": "Gopalakrishna Chandregowda",
+    "isStriken": true,
+    "marks": 5,
+    "days": [
+      {
+        "dayNumber": 1,
+        "isIn": true,
+        "inTime": "10:00 AM",
+        "isAssignmentCompleted": false
+      },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "10:14 AM",
+        "isAssignmentCompleted": true
+      },
+      { "dayNumber": 3 },
+      { "dayNumber": 4 },
+      { "dayNumber": 5 }
+    ]
+  },
+  {
+    "name": "Hardik Sethi",
+    "marks": 12,
+    "days": [
+      {
+        "dayNumber": 1,
+        "isIn": true,
+        "inTime": "10:00 AM",
+        "isAssignmentCompleted": true
+      },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "9:58 AM",
+        "isAssignmentCompleted": true
+      },
       { "dayNumber": 3 },
       { "dayNumber": 4 },
       { "dayNumber": 5 }
@@ -54,7 +192,7 @@
   {
     "name": "Mahalakshmi Jayaprathap",
     "isStriken": true,
-    "marks": 0,
+    "marks": 5,
     "days": [
       {
         "dayNumber": 1,
@@ -62,55 +200,12 @@
         "inTime": "10:00 AM",
         "isAssignmentCompleted": false
       },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
-      { "dayNumber": 3 },
-      { "dayNumber": 4 },
-      { "dayNumber": 5 }
-    ]
-  },
-  {
-    "name": "Ramakanth Chintalapalli",
-    "marks": 6,
-    "days": [
       {
-        "dayNumber": 1,
+        "dayNumber": 2,
         "isIn": true,
-        "inTime": "10:00 AM",
+        "inTime": "9:58 AM",
         "isAssignmentCompleted": true
       },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
-      { "dayNumber": 3 },
-      { "dayNumber": 4 },
-      { "dayNumber": 5 }
-    ]
-  },
-  {
-    "name": "Ashish Mallegowda",
-    "marks": 5,
-    "days": [
-      {
-        "dayNumber": 1,
-        "isIn": true,
-        "inTime": "10:00 AM",
-        "isAssignmentCompleted": true
-      },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
-      { "dayNumber": 3 },
-      { "dayNumber": 4 },
-      { "dayNumber": 5 }
-    ]
-  },
-  {
-    "name": "Bhagyashri Dhoop",
-    "marks": 5,
-    "days": [
-      {
-        "dayNumber": 1,
-        "isIn": true,
-        "inTime": "10:00 AM",
-        "isAssignmentCompleted": true
-      },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
       { "dayNumber": 3 },
       { "dayNumber": 4 },
       { "dayNumber": 5 }
@@ -120,9 +215,7 @@
     "name": "Manpreet Singh",
     "marks": 0,
     "days": [
-      {
-        "dayNumber": 1
-      },
+      { "dayNumber": 1 },
       { "dayNumber": 2 },
       { "dayNumber": 3 },
       { "dayNumber": 4 },
@@ -130,8 +223,8 @@
     ]
   },
   {
-    "name": "Hardik Sethi",
-    "marks": 6,
+    "name": "Mohit Raj",
+    "marks": 10,
     "days": [
       {
         "dayNumber": 1,
@@ -139,7 +232,33 @@
         "inTime": "10:00 AM",
         "isAssignmentCompleted": true
       },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "10:00 AM",
+        "isAssignmentCompleted": true
+      },
+      { "dayNumber": 3 },
+      { "dayNumber": 4 },
+      { "dayNumber": 5 }
+    ]
+  },
+  {
+    "name": "Ooha Bhoga",
+    "marks": 10,
+    "days": [
+      {
+        "dayNumber": 1,
+        "isIn": true,
+        "inTime": "10:00 AM",
+        "isAssignmentCompleted": true
+      },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "9:54 AM",
+        "isAssignmentCompleted": true
+      },
       { "dayNumber": 3 },
       { "dayNumber": 4 },
       { "dayNumber": 5 }
@@ -147,6 +266,7 @@
   },
   {
     "name": "Paramesh Gujjaiah",
+    "isStriken": false,
     "marks": 5,
     "days": [
       {
@@ -155,32 +275,31 @@
         "inTime": "10:00 AM",
         "isAssignmentCompleted": true
       },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
+      { "dayNumber": 2, "isIn": true, "inTime": "9:59 AM" },
       { "dayNumber": 3 },
       { "dayNumber": 4 },
       { "dayNumber": 5 }
     ]
   },
   {
-    "name": "Gopalakrishna Chandregowda",
-    "isStriken": true,
-    "marks": 0,
+    "name": "Pradeep Patil",
+    "marks": 8,
     "days": [
+      { "dayNumber": 1 },
       {
-        "dayNumber": 1,
+        "dayNumber": 2,
         "isIn": true,
         "inTime": "10:00 AM",
-        "isAssignmentCompleted": false
+        "isAssignmentCompleted": true
       },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:14 AM" },
       { "dayNumber": 3 },
       { "dayNumber": 4 },
       { "dayNumber": 5 }
     ]
   },
   {
-    "name": "Priya Khirwal",
-    "marks": 8,
+    "name": "Pranav Gauba",
+    "marks": 11,
     "days": [
       {
         "dayNumber": 1,
@@ -188,7 +307,96 @@
         "inTime": "10:00 AM",
         "isAssignmentCompleted": true
       },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "9:58 AM",
+        "isAssignmentCompleted": true
+      },
+      { "dayNumber": 3 },
+      { "dayNumber": 4 },
+      { "dayNumber": 5 }
+    ]
+  },
+  {
+    "name": "Priya Khirwal",
+    "marks": 13,
+    "days": [
+      {
+        "dayNumber": 1,
+        "isIn": true,
+        "inTime": "10:00 AM",
+        "isAssignmentCompleted": true
+      },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "9:54 AM",
+        "isAssignmentCompleted": true
+      },
+      { "dayNumber": 3 },
+      { "dayNumber": 4 },
+      { "dayNumber": 5 }
+    ]
+  },
+  {
+    "name": "Ramakanth Chintalapalli",
+    "marks": 11,
+    "days": [
+      {
+        "dayNumber": 1,
+        "isIn": true,
+        "inTime": "10:00 AM",
+        "isAssignmentCompleted": true
+      },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "9:52 AM",
+        "isAssignmentCompleted": true
+      },
+      { "dayNumber": 3 },
+      { "dayNumber": 4 },
+      { "dayNumber": 5 }
+    ]
+  },
+  {
+    "name": "Raunak Sinha",
+    "marks": 12,
+    "days": [
+      {
+        "dayNumber": 1,
+        "isIn": true,
+        "inTime": "10:00 AM",
+        "isAssignmentCompleted": true
+      },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "9:54 AM",
+        "isAssignmentCompleted": true
+      },
+      { "dayNumber": 3 },
+      { "dayNumber": 4 },
+      { "dayNumber": 5 }
+    ]
+  },
+  {
+    "name": "Rohit Kumar",
+    "marks": 10,
+    "days": [
+      {
+        "dayNumber": 1,
+        "isIn": true,
+        "inTime": "10:00 AM",
+        "isAssignmentCompleted": true
+      },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "10:00 AM",
+        "isAssignmentCompleted": true
+      },
       { "dayNumber": 3 },
       { "dayNumber": 4 },
       { "dayNumber": 5 }
@@ -198,138 +406,8 @@
     "name": "Sarath Sasidharan",
     "marks": 0,
     "days": [
-      {
-        "dayNumber": 1
-      },
+      { "dayNumber": 1 },
       { "dayNumber": 2 },
-      { "dayNumber": 3 },
-      { "dayNumber": 4 },
-      { "dayNumber": 5 }
-    ]
-  },
-  {
-    "name": "Sumesh Chemmangattil",
-    "marks": 6,
-    "days": [
-      {
-        "dayNumber": 1,
-        "isIn": true,
-        "inTime": "10:00 AM",
-        "isAssignmentCompleted": true
-      },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
-      { "dayNumber": 3 },
-      { "dayNumber": 4 },
-      { "dayNumber": 5 }
-    ]
-  },
-  {
-    "name": "Raunak Sinha",
-    "marks": 7,
-    "days": [
-      {
-        "dayNumber": 1,
-        "isIn": true,
-        "inTime": "10:00 AM",
-        "isAssignmentCompleted": true
-      },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
-      { "dayNumber": 3 },
-      { "dayNumber": 4 },
-      { "dayNumber": 5 }
-    ]
-  },
-  {
-    "name": "Rohit Kumar",
-    "marks": 4,
-    "days": [
-      {
-        "dayNumber": 1,
-        "isIn": true,
-        "inTime": "10:00 AM",
-        "isAssignmentCompleted": true
-      },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
-      { "dayNumber": 3 },
-      { "dayNumber": 4 },
-      { "dayNumber": 5 }
-    ]
-  },
-  {
-    "name": "Pranav Gauba",
-    "marks": 5,
-    "days": [
-      {
-        "dayNumber": 1,
-        "isIn": true,
-        "inTime": "10:00 AM",
-        "isAssignmentCompleted": true
-      },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
-      { "dayNumber": 3 },
-      { "dayNumber": 4 },
-      { "dayNumber": 5 }
-    ]
-  },
-  {
-    "name": "Anjana Patra",
-    "marks": 5,
-    "days": [
-      {
-        "dayNumber": 1,
-        "isIn": true,
-        "inTime": "10:00 AM",
-        "isAssignmentCompleted": true
-      },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
-      { "dayNumber": 3 },
-      { "dayNumber": 4 },
-      { "dayNumber": 5 }
-    ]
-  },
-  {
-    "name": "Dinesh Malviya",
-    "marks": 5,
-    "days": [
-      {
-        "dayNumber": 1,
-        "isIn": true,
-        "inTime": "10:00 AM",
-        "isAssignmentCompleted": true
-      },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
-      { "dayNumber": 3 },
-      { "dayNumber": 4 },
-      { "dayNumber": 5 }
-    ]
-  },
-  {
-    "name": "Mohit Raj",
-    "marks": 5,
-    "days": [
-      {
-        "dayNumber": 1,
-        "isIn": true,
-        "inTime": "10:00 AM",
-        "isAssignmentCompleted": true
-      },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
-      { "dayNumber": 3 },
-      { "dayNumber": 4 },
-      { "dayNumber": 5 }
-    ]
-  },
-  {
-    "name": "Ooha Bhoga",
-    "marks": 5,
-    "days": [
-      {
-        "dayNumber": 1,
-        "isIn": true,
-        "inTime": "10:00 AM",
-        "isAssignmentCompleted": true
-      },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
       { "dayNumber": 3 },
       { "dayNumber": 4 },
       { "dayNumber": 5 }
@@ -339,9 +417,7 @@
     "name": "Shilpa Reddy",
     "marks": 0,
     "days": [
-      {
-        "dayNumber": 1
-      },
+      { "dayNumber": 1 },
       { "dayNumber": 2 },
       { "dayNumber": 3 },
       { "dayNumber": 4 },
@@ -349,13 +425,21 @@
     ]
   },
   {
-    "name": "Pradeep Patil",
-    "marks": 0,
+    "name": "Sumesh Chemmangattil",
+    "marks": 13,
     "days": [
       {
-        "dayNumber": 1
+        "dayNumber": 1,
+        "isIn": true,
+        "inTime": "10:00 AM",
+        "isAssignmentCompleted": true
       },
-      { "dayNumber": 2, "isIn": true, "inTime": "10:00 AM" },
+      {
+        "dayNumber": 2,
+        "isIn": true,
+        "inTime": "9:58 AM",
+        "isAssignmentCompleted": true
+      },
       { "dayNumber": 3 },
       { "dayNumber": 4 },
       { "dayNumber": 5 }

@@ -50,6 +50,8 @@ export class AttendeeComponent implements OnChanges {
   }
 
   public consoleAttendees() {
+    this.attendeeService.isShowMarks = false;
+    this.attendeeService.sortAttendeesByName();
     console.log(JSON.stringify(this.attendeeService.attendees));
   }
 
