@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, ViewContainerRef } from '@angular/core';
+import { Component, Input, OnChanges, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Day, status } from './_model/attendee';
 import { AttendanceService } from './_services/attendance.service';
@@ -55,7 +55,7 @@ export class AttendeeComponent implements OnChanges {
     console.log(JSON.stringify(this.attendeeService.attendees));
   }
 
-  public openToppers(content: ViewContainerRef): void {
+  public openToppers(content: TemplateRef<any>): void {
     this.ngbModalService.open(content, { centered: true });
   }
 }
